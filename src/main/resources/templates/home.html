@@ -3,10 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title th:text="${title}"></title>
+  <link th:href="@{/css/output.css}" rel="stylesheet">
 </head>
 <body>
-  <h1 th:text="${title}"></h1>
-  <p th:text="${content}"></p>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+  <div class="bg-red-500 text-white p-4">
+  Tailwind is working ✅
+</div>
+<div class="bg-blue-500 text-white p-4 text-center">
+  Blue background
+</div>
+<button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">
+  Click me
+</button>
 </body>
 </html>
