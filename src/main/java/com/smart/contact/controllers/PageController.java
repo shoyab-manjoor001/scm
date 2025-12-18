@@ -9,9 +9,9 @@ public class PageController {
 
     @GetMapping("/home")
     public String home(Model model) {
-        model.addAttribute("title", "Home - Smart Contact Manager");
+        // sending data to view
+        model.addAttribute("title", "Smart Contact Manager");
         model.addAttribute("content", "This is the home page of Smart Contact Manager.");
         return "home";
     }
-
 }
