@@ -22,4 +22,12 @@ public class PageController {
         model.addAttribute("content", "This page contains information about Smart Contact Manager.");
         return "about";
     }
+
+    // services page
+    @GetMapping("/services")
+    public String services(Model model) {
+        model.addAttribute("title", "Our Services - SCM");
+        model.addAttribute("content", "Details about the services offered by Smart Contact Manager.");
+        return "services";
+    }
 }
